@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<!-- Top level container for all imports -->
+<VBox xmlns="http://javafx.com/javafx"
+	xmlns:fx="http://javafx.com/fxml">
+	
+	<padding>
+			<Insets bottom="10" left="10" right="10" top="10" />
+	</padding>
+	
+	<!-- Title area, description -->
+	<VBox>
+		<Label fx:id="subTitle"	text="Click server button to see servers" />
+	</VBox>
+	
+	<!-- Controls -->
+	<HBox>
+		<Button fx:id="refreshServers" text="Refresh Servers" onAction="#refreshServers" />
+	</HBox>
+	
+	<!-- Server listing area -->
+	<GridPane hgap="15" vgap="10" fx:id="serverList">  
+		
+	</GridPane>
+		
+
+
+</VBox>
